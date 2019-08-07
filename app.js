@@ -6,7 +6,7 @@ $(document).on("change","#hide",function (e) {
 
 // Add topic to list
 
-$(document).on("click","#add-topic button",function (e) {
+$(document).on("submit","#add-topic", function (e) {
     e.preventDefault();
     const newTopic = $("#add-topic input:last").val();
     if (newTopic != "") {
